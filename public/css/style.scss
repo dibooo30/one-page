@@ -1,0 +1,147 @@
+$darkColor: #141313;
+$lightColor: #212121;
+$fontColorL: #fff;
+$fontColorD: #666;
+$fontSize: 18px;
+
+/*start global*/
+body{
+	background-color: #312a2a;
+}
+.head-img{
+	background-image: url('../images/head.jpg');
+	background-size: cover;
+	height: 200px;
+
+}
+.h1{
+	text-transform: capitalize;
+}
+/*end global*/
+
+/*start navbar*/
+nav{
+	background-color: $darkColor;
+	padding: 20px 0;
+	margin-bottom: 50px !important;
+	a{
+	color: #fff;
+	transition: all ease-in-out .5s;
+	&:hover{
+	color: #888;
+
+}
+}
+}
+/*end nav bar*/
+/*start main*/
+.main{
+	background: url('../images/new-york.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 50px 0;
+	.card{
+	border: none;
+	border-radius: 5px;
+	background-color: $lightColor ;
+	color: #fff;
+	margin-bottom: 20px;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+	&:hover{
+box-shadow: 0px 0px 10px #999;
+transform: scale(1.02);
+	
+}
+h3{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: $darkColor;
+	padding: 10px 0;	
+}
+p{
+	padding: 10px
+}
+button{
+	border: none;
+	width: 100%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: $darkColor;	
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 0;
+	&:focus{
+	border:none;
+	outline: none;
+	
+}
+}
+}
+}
+/*end main*/
+.about-me{
+	color: #fff;
+	padding: 50px 0;
+	.h1-info{
+	padding-bottom: 15px;
+
+	};
+	.prog{
+		width: 100%;
+		padding: 20px 30px;
+		span{
+			margin-bottom: 20px;
+			display: block;
+			font-size: $fontSize + 5
+		}
+		.progress{
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+}
+/*Start contact*/
+.fr{
+	padding: 50px 20px 50px 0;
+	font-size: $fontSize + 5;
+
+	input{
+		width:100%;
+		height: 50px;
+		border:none;
+		padding: 10px;
+/*		border-radius: 10px;
+*/		margin-bottom: 30px;
+		background-color: transparent;
+		color: #ddd;
+		border-bottom: 1px solid #888;
+		&:focus{
+			outline: none;
+		};
+	}
+	textarea{
+		width: 100%;
+		height: 100px;
+		border-radius: 10px;
+		resize: none;
+		background-color: transparent;
+		padding: 10px;
+		color: #ddd;
+		&:focus{
+			outline: none;
+		};
+
+	}
+	button{
+		background-color: transparent;
+		color: #ddd;
+		padding: 5px 43px;
+    	float: right;
+    	border-radius: 15px;
+    	&:focus{
+			outline: none;
+		};
+	}
+}
